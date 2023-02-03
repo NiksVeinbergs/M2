@@ -1,0 +1,25 @@
+[development-start]
+cd /var/www/dev/www
+bin/magento maintenance:enable || exit 1
+git checkout . || exit 1
+git pull origin development
+composer install || exit 1
+bin/magento setup:upgrade || exit 1
+bin/magento setup:di:compile || exit 1
+bin/magento setup:static-content:deploy -f || exit 1
+bin/magento cache:flush || exit 1
+bin/magento maintenance:disable || exit 1
+[development-end]
+
+[staging-start]
+cd /var/www/staging/www
+bin/magento maintenance:enable || exit 1
+git checkout . || exit 1
+git pull origin staging
+composer install || exit 1
+bin/magento setup:upgrade || exit 1
+bin/magento setup:di:compile || exit 1
+bin/magento setup:static-content:deploy -f || exit 1
+bin/magento cache:flush || exit 1
+bin/magento maintenance:disable || exit 1
+[staging-end]
