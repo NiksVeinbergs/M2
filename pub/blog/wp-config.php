@@ -78,7 +78,7 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
-
+ini_set('display_errors','Off');
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
@@ -87,5 +87,5 @@ if ( !defined('ABSPATH') )
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
-define('WP_HOME','https://m2.learning-niksveinbergs.stgin.com/news');
-define('WP_SITEURL','https://m2.learning-niksveinbergs.stgin.com/blog');
+define('WP_HOME','/news');
+define('WP_SITEURL','/blog');
