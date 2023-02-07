@@ -49,9 +49,9 @@ class PreFooter extends Template implements BlockInterface
      * Description.
      *Get pre footer text from page element and return as a string
      *
-     * @return string
+     * @return string|null
      */
-    public function getPreFooterText(): string
+    public function getPreFooterText(): string|null
     {
         $page = $this->getPage();
         return $page->getData(self::PRE_FOOTER_TEXT);
