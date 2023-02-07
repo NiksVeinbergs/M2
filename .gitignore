@@ -64,7 +64,7 @@ atlassian*
 !/pub/media/sitemap/.htaccess
 /pub/static/*
 !/pub/static/.htaccess
-
+/pub/blog/wp-config.php
 /var/*
 !/var/.htaccess
 /vendor/*
