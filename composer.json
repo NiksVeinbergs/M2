@@ -10,7 +10,8 @@
     "require": {
         "magento/product-community-edition": "2.4.4",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
-        "magento/composer-root-update-plugin": "~2.0"
+        "magento/composer-root-update-plugin": "~2.0",
+        "mailchimp/mc-magento2": "^103.4"
     },
     "require-dev": {
         "allure-framework/allure-phpunit": "~1.5.0",
