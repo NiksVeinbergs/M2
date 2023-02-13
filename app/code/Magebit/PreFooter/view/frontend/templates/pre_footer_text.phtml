@@ -1,0 +1,12 @@
+<?php
+/** @var PreFooter $block */
+
+use Magebit\PreFooter\Block\PreFooter;
+
+?>
+
+<?php if ($block->getPreFooterText()): ?>
+    <div class="pre-footer-text">
+        <?php echo $block->getPreFooterText(); ?>
+    </div>
+<?php endif; ?>
