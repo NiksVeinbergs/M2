@@ -4,6 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+    "content-hash": "d74f9b5cf274ed150db27206502cba7a",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -16697,64 +16698,6 @@
             "time": "2022-06-21T01:22:39+00:00"
         },
         {
-            "name": "mageplaza/module-core",
-            "version": "1.5.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/module-core.git",
-                "reference": "343eea86ded45f31e70768d8e0994e52d4a63a68"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/module-core/zipball/343eea86ded45f31e70768d8e0994e52d4a63a68",
-                "reference": "343eea86ded45f31e70768d8e0994e52d4a63a68",
-                "shasum": ""
-            },
-            "type": "magento2-module",
-            "autoload": {
-                "files": [
-                    "registration.php"
-                ],
-                "psr-4": {
-                    "Mageplaza\\Core\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza",
-                    "email": "support@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Technical Support"
-                }
-            ],
-            "description": "Mageplaza Core for Magento 2",
-            "support": {
-                "issues": "https://github.com/mageplaza/module-core/issues",
-                "source": "https://github.com/mageplaza/module-core/tree/v1.5.2"
-            },
-            "time": "2023-02-08T03:01:31+00:00"
-        },
-        {
-            "name": "mageplaza/module-google-recaptcha",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/mageplaza/magento-2-google-recaptcha.git",
-                "reference": "825a88267d3df7e02caabd9a6c49a8b052738c0d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/mageplaza/magento-2-google-recaptcha/zipball/825a88267d3df7e02caabd9a6c49a8b052738c0d",
-                "reference": "825a88267d3df7e02caabd9a6c49a8b052738c0d",
-                "shasum": ""
-            },
-            "require": {
-                "google/recaptcha": "^1.2",
-                "mageplaza/module-core": "^1.4.5"
             "name": "mailchimp/mc-magento2",
             "version": "103.4.50",
             "source": {
@@ -16779,28 +16722,11 @@
                     "registration.php"
                 ],
                 "psr-4": {
-                    "Mageplaza\\GoogleRecaptcha\\": ""
                     "Ebizmarts\\MailChimp\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "proprietary"
-            ],
-            "authors": [
-                {
-                    "name": "Mageplaza",
-                    "email": "support@mageplaza.com",
-                    "homepage": "https://www.mageplaza.com",
-                    "role": "Technical Support"
-                }
-            ],
-            "description": "Magento 2 Google Recaptcha Extension",
-            "support": {
-                "issues": "https://github.com/mageplaza/magento-2-google-recaptcha/issues",
-                "source": "https://github.com/mageplaza/magento-2-google-recaptcha/tree/v4.0.2"
-            },
-            "time": "2021-08-22T10:04:35+00:00"
                 "OSL-3.0",
                 "AFL-3.0"
             ],
@@ -16820,7 +16746,6 @@
                 "wiki": "https://connect.mailchimp.com/integrations/magento"
             },
             "time": "2022-11-21T16:43:13+00:00"
-
         },
         {
             "name": "monolog/monolog",

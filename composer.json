@@ -11,7 +11,6 @@
         "magento/product-community-edition": "2.4.4",
         "magento/composer-dependency-version-audit-plugin": "~0.1",
         "magento/composer-root-update-plugin": "~2.0",
-        "mageplaza/module-google-recaptcha": "^4.0"
         "mailchimp/mc-magento2": "^103.4"
     },
     "require-dev": {
