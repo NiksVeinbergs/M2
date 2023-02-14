@@ -30,21 +30,20 @@
     dataLayer.push({
         'event': 'purchase',
         'ecommerce': {
-            'purchase': {
-                'currency': 'USD',
-                'value': 50.00,
-                'tax': 2.50,
-                'shipping': 5.00,
-                'items': [{
-                    'item_name': 'Example Product',
-                    'item_id': 'SKU123',
-                    'item_brand': 'Example Brand',
-                    'item_category': 'Example Category',
-                    'item_variant': 'Example Variant',
-                    'price': 25.00,
-                    'quantity': 2
-                }]
-            }
+            'transaction_id': <?= $block->getOrderId ?>,
+            'currency': 'USD',
+            'value': 50.00,
+            'tax': 2.50,
+            'shipping': 5.00,
+            'items': [{
+                'item_name': 'Example Product',
+                'item_id': 'SKU123',
+                'item_brand': 'Example Brand',
+                'item_category': 'Example Category',
+                'item_variant': 'Example Variant',
+                'price': 25.00,
+                'quantity': 2
+            }]
         }
     });
 </script>
