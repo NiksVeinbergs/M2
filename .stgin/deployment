@@ -3,7 +3,7 @@ cd /var/www/dev/www
 bin/magento maintenance:enable || exit 1
 git checkout . || exit 1
 git pull origin development
-composer install || exit 1
+composer install --no-interact || exit 1
 bin/magento setup:upgrade || exit 1
 bin/magento setup:di:compile || exit 1
 bin/magento setup:static-content:deploy -f || exit 1
@@ -16,7 +16,7 @@ cd /var/www/staging/www
 bin/magento maintenance:enable || exit 1
 git checkout . || exit 1
 git pull origin staging
-composer install || exit 1
+composer install --no-interact || exit 1
 bin/magento setup:upgrade || exit 1
 bin/magento setup:di:compile || exit 1
 bin/magento setup:static-content:deploy -f || exit 1
