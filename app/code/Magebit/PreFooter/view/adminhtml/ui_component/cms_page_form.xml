@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <fieldset name="pre-footer" sortOrder="15">
+        <settings>
+            <collapsible>true</collapsible>
+            <label translate="true">Pre-Footer Text</label>
+        </settings>
+        <field name="pre_footer_text" template="ui/form/field" formElement="wysiwyg">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="source" xsi:type="string">page</item>
+                </item>
+            </argument>
+            <settings>
+                <label>Pre-Footer Text</label>
+                <additionalClasses>
+                    <class name="admin__field-wide">true</class>
+                </additionalClasses>
+                <notice translate="true">Note: Keyboard shortcut to activate editor help : Alt + 0 (Windows) or &#x2325;0 (MacOS)</notice>
+                <dataScope>pre_footer_text</dataScope>
+            </settings>
+            <formElements>
+                <wysiwyg>
+                    <settings>
+                        <wysiwyg>true</wysiwyg>
+                    </settings>
+                </wysiwyg>
+            </formElements>
+        </field>
+    </fieldset>
+</form>
